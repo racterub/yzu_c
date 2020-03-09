@@ -1,7 +1,7 @@
-yzu python
+yzu c
 ===
 
-This is where I store YZU python class' execises
+This is where I store YZU c class' execises
 
-Lesson number: `CP109`
+Lesson number: `CP119`
 
