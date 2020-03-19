@@ -8,6 +8,9 @@ int main(int argc, char *argv[])
     printf("Input a b c: ");
     scanf("%d%d%d", &a, &b, &c);
     
+    //exception
+    if (a == 0 && b == 0 && c == 0) return 0;
+
     //avg
     avg = (a + b + c) / 3;
 
