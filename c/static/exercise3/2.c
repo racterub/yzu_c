@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     int data;
-    //you can us int instead, using unsigned long long is just a prevention to int-overflow
+    //you can use int instead, using unsigned long long is just a prevention to int-overflow
     unsigned long long mod;
     float answer = 1.0;
     printf("Input: ");
