@@ -7,8 +7,8 @@
 int main(int argc, char *argv[])
 {
     int data;
+    //you can us int instead, using unsigned long long is just a prevention to int-overflow
     unsigned long long mod;
-    //double mod;
     float answer = 1.0;
     printf("Input: ");
     scanf("%d", &data);
@@ -17,10 +17,8 @@ int main(int argc, char *argv[])
         for (int j=1;j<=i;j++) {
             mod *= j;
         }
-        printf("%.10f\n", answer);
-        printf("%llu\n", mod);
         answer += pow(data, i) / (float)mod;
     }
     printf("==> %.10f\n", answer);
-    return 0;   
+    return 0;
 }

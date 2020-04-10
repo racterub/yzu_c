@@ -44,7 +44,7 @@ void printD(void) {
 
 int main(int argc, char *argv[])
 {
-    
+
     printA();
     printB();
     printC();

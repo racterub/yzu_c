@@ -5,6 +5,8 @@ int fib(int n) {
     return fib(n-1) + fib(n-2);
 }
 
+//maybe you can try linked-list version of fib, which is faster :)
+
 int main(int argc, char *argv[])
 {
 

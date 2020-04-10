@@ -6,11 +6,13 @@ int main(int argc, char *argv[])
     while (1) {
         printf("Input: ");
         scanf("%d", &data);
+        //Stop program if input < 0
         if (data < 0) {
             puts("Need a non-negative number");
             continue;
         }
-        if (data == 0) return 1;
+        //if input == 0, stop program
+        if (data == 0) break;
         answer = 0;
         for (int i=1;i<=data;i++) {
             tmp = 1;

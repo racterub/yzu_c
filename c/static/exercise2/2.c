@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
         printf("Input: ");
         scanf("%d", &data);
     
-        //exception
+        //Stop program if input < 0
         if (data < 0) break; 
 
         tmp = data;
