@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     printf("Input: ");
     scanf("%d", &data);
     for (int i=1;i<=LOOP;i++) {
-        mod = 1; 
+        mod = 1;
         for (int j=1;j<=i;j++) {
             mod *= j;
         }
