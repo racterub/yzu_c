@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// define out loop wil run 100 times
+// define out loop wil run 30 times
 #define LOOP 30
 
 int main(int argc, char *argv[])
