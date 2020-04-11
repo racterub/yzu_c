@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     while (1) {
         printf("Input: ");
         scanf("%d", &data);
-        //Stop program if input < 0
+        //jump to start if input < 0
         if (data < 0) {
             puts("Need a non-negative number");
             continue;
