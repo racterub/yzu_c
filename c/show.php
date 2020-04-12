@@ -38,14 +38,13 @@
                 <i class="chevron left icon"></i>
             </a>
         </div>
-        <a href="." class="item">首頁</a>
         <a href="https://github.com/racterub/yzu_c" class="item">GitHub</a>
         <a href="https://racterub.me/python" class="item">CP109 (python)</a>
     </div>
     <div class="pusher">
         <div class="large device only">
             <div class="ts stackable menu">
-                <a href="." class="item">首頁</a>
+                <a href="https://racterub.me/c/" class="item">Home</a>
                 <a href="https://github.com/racterub/yzu_c" class="item">GitHub</a>
                 <a href="https://racterub.me/python" class="item">CP109 (python)</a>
             </div>
@@ -58,6 +57,7 @@
                     }).sidebar('toggle');" class="item">
                     <i class="list layout icon"></i>
                 </a>
+                <a href="https://racterub.me/c/" class="item">Home</a>
             </div>
         </div>
         <br>
