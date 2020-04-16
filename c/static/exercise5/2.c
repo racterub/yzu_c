@@ -4,11 +4,9 @@ int isPerfect(int x) {
     int result = 0;
     int tmp;
     float fac;
-    for (float i=1;i<x;i++) {
-        tmp = x;
-        fac = tmp / i;
-        if (fac == (int)fac) {
-            result += (int)i;
+    for (int i=1;i<x;i++) {
+        if (x % i == 0) {
+            result += i;
         }
     }
     if (result == x) {

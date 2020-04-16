@@ -16,6 +16,20 @@ int main(int argc, char *argv[])
     int w, h;
     char ch;
     printf("Input width, height and character of your rectangle: ");
+    /*
+    You can use scanf separately, but there will have a bug.
+
+    When you inputed second digit (h for example), your ch will be '\n', which is newline(換行)
+
+    There is a fast way to fix it, try this:
+
+    scanf("%d", &w);
+    scanf("%d", &h);
+    getchar();
+    scanf("%d", &ch);
+
+    getchar will get rid of newline for you
+    */
     scanf("%d %d %c", &w, &h, &ch);
     puts("");
     fillCharacter(w, h, ch);
