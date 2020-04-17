@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     char ch;
     printf("Input width, height and character of your rectangle: ");
     /*
-    You can use scanf separately, but there will have a bug.
+    You can use scanf separately, but there will be a bug.
 
     When you inputed second digit (h for example), your ch will be '\n', which is newline(換行)
 
