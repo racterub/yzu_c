@@ -63,8 +63,9 @@
         <br>
         <br>
         <div class="ts very narrow container">
+            <h2 class="ts dividing header"><?=htmlentities(substr($src, 9, strlen($src)-9), ENT_QUOTES, 'UTF-8');?></h2>
             <div class="ts segment">
-                <pre class="line-numbers " data-src="<?=$src?>" data-download-link></pre>
+                <pre class="line-numbers" data-src="<?=$src?>" data-download-link></pre>
             </div>
         </div>
     </body>
