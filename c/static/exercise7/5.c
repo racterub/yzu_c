@@ -9,12 +9,20 @@ int partition(int arr[],int arrSize) {
     for (int i=0;i<arrSize;i++) {
         sum += arr[i];
     }
+    /*
+        we need to divide arr into three part with the same sum.
+        In mathematic, equation should be n*3 == arrSum (n is the sum of part arr)
+        so if sum % 3 == 0, this should be a valid case.
+    */
     if (sum % 3 == 0) {
+        /*
+            iterate through arr, if sum equals to n, we have one part of the arr, so part++
+        */
         target = sum / 3;
         for (int i=0;i<arrSize;i++) {
             tmp += arr[i];
             if (tmp == target) {
-                part += 1;
+                part++;
                 tmp = 0;
             }
         }
