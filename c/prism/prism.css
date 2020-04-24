@@ -1,5 +1,5 @@
 /* PrismJS 1.20.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+c+cpp&plugins=line-numbers+file-highlight+show-language+highlight-keywords+toolbar+copy-to-clipboard+download-button+match-braces */
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+c+cpp+python&plugins=line-numbers+autolinker+file-highlight+show-language+highlight-keywords+toolbar+copy-to-clipboard+download-button+match-braces */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -165,6 +165,9 @@ pre[class*="language-"].line-numbers > code {
 			text-align: right;
 		}
 
+.token a {
+	color: inherit;
+}
 div.code-toolbar {
 	position: relative;
 }
