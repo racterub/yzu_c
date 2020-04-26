@@ -1,6 +1,9 @@
 <?php
     if (!empty($_GET['code'])) {
         $src = $_GET['code'];
+        if (!file_exists($src)) {
+            die('<img src="img/stop.jpg"></img>');
+        }
     } else {
         die('<img src="img/stop.jpg"></img>');//NO LFI HERE LOL
     }
