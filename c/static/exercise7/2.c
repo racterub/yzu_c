@@ -5,6 +5,7 @@
 int checkDup(int arr[],int arrSize, int search) {
     for (int i=0;i<arrSize;i++) {
         if (search == arr[i]) {
+            // return 1 if found same value in arr
             return 1;
         }
     }
@@ -19,6 +20,7 @@ int main(int argc, char *argv[])
     int i = 0;
     while (i < 6) {
         tmp = 1 + rand() % 49;
+        // check any duplication, if yes, regenerate again
         if (checkDup(arr, 6, tmp) == 1) {
            continue; 
         }
