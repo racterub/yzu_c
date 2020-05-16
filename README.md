@@ -1,7 +1,7 @@
 yzu c
 ===
 
-This is where I store YZU c class' execises
+李建誠真的有點不優
 
 Lesson number: `CP119`
 
