@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
             tmp[pointer] = arr[j];
             pointer++;
         }
-        if (strcmp(tmp, target)) {
+        if (strcmp(tmp, target) == 0) {
             puts("true");
             return 0;
         }
