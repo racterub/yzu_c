@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// create Personal struct
 typedef struct Personal {
     char name[15];
     int bornYear;
@@ -10,12 +9,10 @@ typedef struct Personal {
     char address[20];
 } Personal;
 
-// write to file
 void write_address(FILE *fptr, Personal *ptr) {
     fprintf(fptr, "%s %d %s %s\n", ptr->name, ptr->bornYear, ptr->phoneNumber, ptr->address);
 }
 
-// read from file
 void read_address(FILE *fptr) {
     char name[15];
     int bornYear;
@@ -30,7 +27,6 @@ void read_address(FILE *fptr) {
     }
 }
 
-// delete certain name's record
 void delete_address(FILE *fptr, char *name) {
     char *tmpFile = "addressBook.tmp";
     char *origFile = "addressBook.txt";
@@ -84,10 +80,6 @@ int main(int argc, char *argv[])
     scanf("%d", &size);
     getchar();
     for (int i=0; i<size; ++i) {
-
-        // process input data
-        //
-        // here use malloc to create dynamic memory
         ptr = malloc(sizeof(Personal));
         printf("Input Name: ");
         fgets(name, 15, stdin);
@@ -104,30 +96,21 @@ int main(int argc, char *argv[])
         addressLen = strlen(address) - 1;
         address[addressLen] = '\0';
 
-        // copy input data into malloc'ed memory
         strcpy(ptr->name, name);
         ptr->bornYear = bornYear;
         strcpy(ptr->phoneNumber, phoneNumber);
         strcpy(ptr->address, address);
-
-        // write into file
         write_address(fptr, ptr);
-
-        // you need to free malloc memory once it finished it's job
         free(ptr);
     }
 
-    // reset file pointer
     rewind(fptr);
-    // read function
     read_address(fptr);
 
-    // remove function
     printf("Input a name in the address book to delete (q to pass): ");
     fgets(deleteName, 15, stdin);
     deleteNameLen = strlen(deleteName) - 1;
-    deleteName[deleteNameLen] = '\0';
-    
+    deleteName[deleteNameLen] = '\0';    
     rewind(fptr);
     delete_address(fptr, deleteName);
 
